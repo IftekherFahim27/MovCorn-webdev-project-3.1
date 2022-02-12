@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Updated MovCorn</title>
+
+    <!-- <script type="text/javascript">
+        function myfunction() {
+            alert("how are you");
+        }
+    </script> -->
+</head>
+
+<body>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <header>
+        <div class="logo">
+            <img src="images/MovCorn_icon2.png" alt="image" class="logo-image" >
+        </div>
+
+        <div class="navbar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <!-- <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-expanded="false"> Genre </a>
+                            <div class="dropdown-menu mega-area" aria-labelledby="mega-area">
+                                <span id="tags"></span>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-expanded="false"> Movies </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" id="Upcoming-Movies" role="button">Upcoming Movies</a>
+                                <a class="dropdown-item" id="top_rated_Movies" role="button">Top Rated Movies</a>
+                                <a class="dropdown-item" id="trending_Movies" role="button">Trending Movies</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <form class="form-inline my-2 my-lg-0" id="form"><!-- search option -->
+                        <input  type="text" placeholder="Search" id="search" class="search">
+                    </form>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- search option -->
+        <!--         <form id="form">            
+            <input type="text" placeholder="Search" id="search" class="search">
+        </form> -->
+
+    </header>
+    <!-- <div id="tags"></div> -->
+    <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a>
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">&#8658;</a>
+    </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
